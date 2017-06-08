@@ -1,0 +1,33 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	background-color: #fff;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.Container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 1170px;
+	width: 100%;
+}
+
+		/* End Of common Styles */
+
+		     /* Top Start */
+
+.Top {
+	display: flex;
+	height: 58px;
+	background-color: #006cb7;
+}
+
+.Top .Container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
