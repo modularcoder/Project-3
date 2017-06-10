@@ -134,19 +134,69 @@ body {
   justify-content: center;
 }
 
-.Subscription .Container{
-  height: 205px;
-}
-
-
 .Subscription-Group {
-  /*height: 205px;*/
-  border: 1px solid;
-  box-sizing: 1170px 1px 1170px 205px;
+  display: flex;
+  height: 205px;
   background-color: #006cb7;
+  align-items: center;
   justify-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  color: #fff;
+  border-radius: 10px;
+  position: relative;
+
 }
+
+.Subscription-Group::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  bottom: 0;
+  transform-origin: right top;
+  transform: skewY(3deg);
+  border-radius: 10px;
+}
+
+.Subscription .Discription {
+  padding-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.Btn.Registration {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.Subscription input {
+  height: 40px;
+  width: 260px;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  background-color: #006cb7;
+  color: #fff;
+  padding-left: 20px
+
+
+}
+
+.Btn.Registration a {
+  display: flex;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  height: 40px;
+  width: 114px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-left: 10px
+}
+
+
 
 
 
