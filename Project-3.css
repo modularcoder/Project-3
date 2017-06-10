@@ -47,6 +47,7 @@ body {
 
 .Header .icon {
   margin: 0 5px;
+  color: #fff;
 }
 
 .Header .Nav a {
@@ -136,7 +137,7 @@ body {
 
 .Subscription-Group {
   display: flex;
-  height: 205px;
+  height: 150px;
   background-color: #006cb7;
   align-items: center;
   justify-content: center;
@@ -144,7 +145,7 @@ body {
   color: #fff;
   border-radius: 10px;
   position: relative;
-
+  z-index: 1;
 }
 
 .Subscription-Group::after {
@@ -156,8 +157,9 @@ body {
   z-index: -1;
   bottom: 0;
   transform-origin: right top;
-  transform: skewY(3deg);
+  transform: skewY(2deg);
   border-radius: 10px;
+  left: 0;
 }
 
 .Subscription .Discription {
