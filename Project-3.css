@@ -182,8 +182,16 @@ body {
   background-color: #006cb7;
   color: #fff;
   padding-left: 20px
+  font-size: 1.1rem;
+}
 
+.Subscription input:focus {
+  outline: none;
+}
 
+::-webkit-input-placeholder {
+  color: #fff;
+  padding-left: 25px;
 }
 
 .Btn.Registration a {
@@ -244,7 +252,9 @@ body {
 }
 
 .Advantage .Box {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 10px;
   border-right: 1px solid #cfcfcf;
   padding-right: 25px;
@@ -255,14 +265,16 @@ body {
   border: none;
 }
 
-.Advantage .Box i {
-  background-color: #006cb7;
-  color: #fff;
-  border-radius: 100%;
+.Advantage .SocialIcon {
+  display: flex;
   height: 111px;
   width: 111px;
-  margin-bottom: 15px;
-  padding-top: 18px;
+  background-color: #006cb7;
+  border-radius: 100%;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
           /* Advantage End */
@@ -410,16 +422,22 @@ body {
 }
 
 .Navigation .Social-Icons {
+  display: flex;
   margin-top: 50px;
 }
 
 .Navigation .Social-Icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 50px;
+  width: 50px;
   background-color: #006cb7;
-  color: #fff;
   border-radius: 100%;
-  padding: 20px;
-  margin-right: 10px;
-  font-size: 1.3rem;
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
 }
 
 .Navigation .Links .Title {
