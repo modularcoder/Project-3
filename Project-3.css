@@ -33,7 +33,6 @@ body {
 .Header .Header-Group  {
   display: flex;
   justify-content: space-between;
-
 }
 
 .Header .Contact a {
@@ -224,10 +223,9 @@ body {
 
 .Advantage-Group {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding-top: 150px;
 }
 
@@ -244,21 +242,35 @@ body {
 }
 
 .Advantage .Box-Group {
-  display: flex;
-  justify-content: center;
   align-items: center;
   margin-top: 77px;
-  flex-wrap: nowrap;
+}
+
+.Advantage .Discription {
+  max-width: 400px;
+  /*padding-bottom: 50px;*/
 }
 
 .Advantage .Box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
-  border-right: 1px solid #cfcfcf;
-  padding-right: 25px;
   font-size: 0.9rem;
+  flex-basis: 30%;
+  padding-top: 20px;
+}
+
+@media (min-width: 900px) {        /*Media*/
+  .Advantage .Box-Group {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+  }
+
+  .Advantage .Separator {
+  height: 265px;
+  border-right: 1px solid #cfcfcf;
+}
 }
 
 .Advantage .Box-3 {
@@ -287,20 +299,26 @@ body {
 }
 
 .Benefits-Group {
-  display: flex;
-  justify-content: space-between;
   margin-top: 100px;
-  background-color: #f1f1f1;
 }
 
-.Benefits .Left-Side {
+@media (min-width: 900px) {        /*Media*/
+  .Benefits-Group {
+    display: flex;
+  }
+}
+
+.Benefits .Box {
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  padding: 30px 0;
+  flex: 1;
 }
 
-.Benefits-Group .Left-Side .Title {
+.Benefits-Group .Box .Title {
   color: #3b3b3b;
   font-size: 1.2rem;
   padding-bottom: 25px;
@@ -319,10 +337,10 @@ body {
   max-width: 450px;
 }
 
-.Benefits-Group img {
-  background-color: #bdbdbd;
-  height: 380px;
-  width: 590px;
+.Benefits-Group .Box.Img{
+  background-image: url(vendor/Benefits.jpg);
+  background-size: cover;
+  min-height: 335px;
 }
 
           /* Benefits End */
@@ -341,10 +359,10 @@ body {
   color: #fff;
   align-items: center;
   flex-direction: column;
+  padding: 80px 0;
 }
 
 .Testimonials-Group .Title {
-  padding-top: 50px;
   font-size: 1.5rem;
 }
 
@@ -354,14 +372,26 @@ body {
 }
 
 .Testimonials .Opinion-Group {
-  display: flex;
+
 }
 
+@media (min-width: 900px) {        /*Media*/
+  .Testimonials .Opinion-Group {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.Opinion-Group .Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+  flex-basis: 30%;
+}
 .Opinion-Group .Opinion {
   background-color: #0056a6;
-  margin: 20px;
-  padding: 50px;
-  padding-bottom: 120px;
+  padding: 50px 50px 120px 50px;
   font-size: 1.1rem;
   color: rgba(255,255,255,0.7);
 }
@@ -370,9 +400,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: -50px;
-  margin-left: 40px;
-  margin-bottom: 89px;
+  margin-top: -40px;
 }
 
 .Opinion-Group .Authors ul {
@@ -388,6 +416,10 @@ body {
   height: 120px;
   width: 120px;
   background-color: #fff;
+  background-image: url(vendor/Opinion-Group%20img.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top ;
   border: 10px solid #e3e3e3;
   border-radius: 100%;
 }
@@ -456,6 +488,10 @@ body {
   color: #363636;
 }
 
+.Navigation .Links a:hover {
+  color: #0056a6;
+}
+
 .Navigation .Links ul {
   list-style: none;
   padding-left: 0px;
@@ -475,4 +511,8 @@ body {
 
           /* Footer End */
 
-
+/*@media screen and (min-width: 480px) {
+  body {
+    font-size: 1px;
+  }
+}*/
