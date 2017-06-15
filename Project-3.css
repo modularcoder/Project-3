@@ -49,6 +49,7 @@ body {
 .Header .Contact a {
   text-decoration: none;
   color: #fff;
+  padding-right: 20px;
 }
 
 .Header .Contact a:hover {
@@ -74,10 +75,6 @@ body {
 @media only screen and (max-width: 800px){
   .Header .Contact .Secondary {
     display: none;
-  }
-
-  .Header .Contact .icon1{
-    padding: 0 10px;
   }
 
   .Header .Contact .icon1:hover {
